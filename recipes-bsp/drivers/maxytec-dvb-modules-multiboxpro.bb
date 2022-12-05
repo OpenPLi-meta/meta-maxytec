@@ -1,12 +1,12 @@
 KV = "4.4.35"
-SRCDATE = "20211207"
+SRCDATE = "20221201"
 
 PROVIDES = "virtual/blindscan-dvbs"
 
 require maxytec-dvb-modules.inc
 
-SRC_URI[md5sum] = "4898a370328151cf57cea93d772b2049"
-SRC_URI[sha256sum] = "16a9175d384baace4d35f00fbcfd392898d0c17aad8b698f36e38ea496475395"
+SRC_URI[md5sum] = "7f48da6617d72de8e6f5c12f32d6538a"
+SRC_URI[sha256sum] = "18bb8d5481e88e10b14a11f433fc16c7f1084e25ba3dfe4dadf03b22c0569adb"
 
 COMPATIBLE_MACHINE = "multiboxpro"
 

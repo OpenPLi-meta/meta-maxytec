@@ -1,6 +1,6 @@
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = " \
 	maxytec-dvb-modules-${MACHINE} \
-	${@bb.utils.contains('MACHINE_FEATURES', 'hisil', 'maxytec-libs-${MACHINE} maxytec-param-${MACHINE} maxytec-bootargs-${MACHINE} maxytec-fastboot-${MACHINE} maxytec-logo-${MACHINE} maxytec-recovery-${MACHINE}' , '', d)} \
+	${@bb.utils.contains('MACHINE_FEATURES', 'hisil', 'maxytec-libs-${MACHINE} maxytec-param-${MACHINE} maxytec-bootargs-${MACHINE} maxytec-fastboot-${MACHINE} maxytec-logo-${MACHINE} maxytec-recovery-${MACHINE} maxytec-dtbo-${MACHINE}' , '', d)} \
 	"
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
