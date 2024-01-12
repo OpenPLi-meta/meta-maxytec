@@ -12,7 +12,7 @@ S = "${WORKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-FILES_${PN} += "${sysconfdir}/modprobe.d/${MACHINE}.conf ${base_libdir}/modules/${KV}/extra"
+FILES:${PN} += "${sysconfdir}/modprobe.d/${MACHINE}.conf ${base_libdir}/modules/${KV}/extra"
 
 do_compile() {
 }
@@ -26,7 +26,7 @@ do_install() {
 	done
 }
 
-pkg_prerm_${PN}() {
+pkg_prerm:${PN}() {
 	if [ "x$D" == "x" ]; then
 		if [ -f /lib/modules/${KV}/extra/hi_play.ko ] ; then
 			rm -f /lib/modules/${KV}/extra/hi_play.ko;
@@ -34,5 +34,5 @@ pkg_prerm_${PN}() {
 	fi
 }
 
-RREPLACES_${PN} = "kernel-module-${MACHINE}-1-4.4.35 kernel-module-${MACHINE}-2-4.4.35 kernel-module-${MACHINE}-3-4.4.35 kernel-module-${MACHINE}-4-4.4.35 kernel-module-hi-play-4.4.35"
-RCONFLICTS_${PN} = "kernel-module-${MACHINE}-1-4.4.35 kernel-module-${MACHINE}-2-4.4.35 kernel-module-${MACHINE}-3-4.4.35 kernel-module-${MACHINE}-4-4.4.35 kernel-module-hi-play-4.4.35"
+RREPLACES:${PN} = "kernel-module-${MACHINE}-1-4.4.35 kernel-module-${MACHINE}-2-4.4.35 kernel-module-${MACHINE}-3-4.4.35 kernel-module-${MACHINE}-4-4.4.35 kernel-module-hi-play-4.4.35"
+RCONFLICTS:${PN} = "kernel-module-${MACHINE}-1-4.4.35 kernel-module-${MACHINE}-2-4.4.35 kernel-module-${MACHINE}-3-4.4.35 kernel-module-${MACHINE}-4-4.4.35 kernel-module-hi-play-4.4.35"
