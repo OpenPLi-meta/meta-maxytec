@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit deploy
 
-SRC_URI = "http://downloads.mutant-digital.net/maxytec/${MACHINE}/${MACHINE}-fastboot-${SRCDATE}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/maxytec/${MACHINE}-fastboot-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 

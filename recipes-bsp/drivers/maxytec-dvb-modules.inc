@@ -9,7 +9,7 @@ RPROVIDES:maxytec-dvb-modules-${MACHINE} += "virtual/blindscan-dvbs"
 
 PV = "${KV}+${SRCDATE}"
 
-SRC_URI = "http://downloads.mutant-digital.net/maxytec/${MACHINE}/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/maxytec/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
