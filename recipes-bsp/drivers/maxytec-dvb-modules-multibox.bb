@@ -1,8 +1,6 @@
 KV = "4.4.35"
 SRCDATE = "20221213"
 
-PROVIDES = "virtual/blindscan-dvbs"
-
 require maxytec-dvb-modules.inc
 
 SRC_URI[md5sum] = "8c539ac9ac0dd77a439fde830d9bb4a8"
