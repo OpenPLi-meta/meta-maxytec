@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PROVIDES += "virtual/blindscan-dvbs"
-RPROVIDES:maxytec-dvb-modules-${MACHINE} += "virtual-blindscan-dvbs"
+RPROVIDES:maxytec-dvb-modules-${MACHINE} += "virtual/blindscan-dvbs"
 
 PV = "${KV}+${SRCDATE}"
 
